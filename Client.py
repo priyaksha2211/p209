@@ -4,7 +4,7 @@ from tkinter import *
 from tkinter import ttk
 import ftplib
 import os
-import ntpath #This is used to extract filename from path
+import ntpath 
 import time
 from ftplib import FTP
 from tkinter import filedialog
