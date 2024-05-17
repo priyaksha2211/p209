@@ -9,9 +9,6 @@ import time
 from ftplib import FTP
 from tkinter import filedialog
 from pathlib import Path
-
-#import winsound
-#Uncomment the beow two line to use pygame to allow mp3 files as well
 from playsound import playsound
 import pygame
 from pygame import mixer
@@ -27,10 +24,6 @@ filePathLabel = None
 
 global song_counter
 song_counter = 0
-
-
-
-
 
 def play():
     global song_selected
@@ -52,16 +45,7 @@ def stop():
     mixer.music.load('shared_files/'+song_selected)
     mixer.music.pause()
     infoLabel.configure(text="")
-
-
-  
-
-   
     
-
-    
-        
-#Client GUI
 def musicWindow(): 
     global song_counter
     global filePathLabel
@@ -92,8 +76,6 @@ def musicWindow():
     
     Stop=Button(window,text="Stop",bd=1,width=10,bg='SkyBlue', font = ("Calibri",10), command = stop)
     Stop.place(x=200,y=200)
-
-       
     
     Upload=Button(window,text="Upload",width=10,bd=1,bg='SkyBlue', font = ("Calibri",10))
     Upload.place(x=30,y=300)
@@ -119,10 +101,3 @@ def setup():
 
 #Initiate Server Connection    
 setup()
-
-
-   
-
-
-
-
